@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 16-Set-2021 às 03:59
+-- Tempo de geração: 16-Set-2021 às 04:18
 -- Versão do servidor: 10.4.8-MariaDB
 -- versão do PHP: 7.3.10
 
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `banco_cnae`
 --
+CREATE DATABASE IF NOT EXISTS `banco_cnae` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `banco_cnae`;
 
 -- --------------------------------------------------------
 
