@@ -1,2 +1,2 @@
 # P.I
-Projeto Integrado Univesp
+Projeto Integrador Univesp
