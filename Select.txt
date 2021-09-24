@@ -1,0 +1,65 @@
+SELECT
+	cnae_codigo,
+	cnae_descricao,
+	agrupamento_descricao,
+	grau_de_risco_descricao,
+	previa.documentacao_descricao, 
+	inicial.documentacao_descricao
+FROM cnae
+
+LEFT JOIN agrupamento
+ON agrupamento.agrupamento_id = cnae.fk_agrupamento_id
+
+LEFT JOIN cnae_e_grau_de_risco
+ON cnae_e_grau_de_risco.fk_cnae_id = cnae.cnae_id
+
+LEFT JOIN grau_de_risco
+ON grau_de_risco.grau_de_risco_id = cnae_e_grau_de_risco.fk_grau_de_risco_id
+
+LEFT JOIN cnae_e_documentacao
+ON cnae_e_documentacao.fk_cnae_id = cnae.cnae_id
+
+LEFT JOIN documentacao previa
+ON previa.documentacao_id = cnae_e_documentacao.previa_fk_documentacao_id
+
+LEFT JOIN documentacao inicial
+ON inicial.documentacao_id = cnae_e_documentacao.inicial_fk_documentacao_id
+
+WHERE cnae_codigo LIKE '%$consultar%' LIMIT 20;
+
+SELECT
+	cnae_codigo,
+	cnae_descricao,
+	agrupamento_descricao,
+	grau_de_risco_descricao,
+	documentacao_descricao
+FROM cnae
+
+LEFT JOIN agrupamento
+ON agrupamento.agrupamento_id = cnae.fk_agrupamento_id
+
+LEFT JOIN cnae_e_grau_de_risco
+ON cnae_e_grau_de_risco.fk_cnae_id = cnae.cnae_id
+
+LEFT JOIN grau_de_risco
+ON grau_de_risco.grau_de_risco_id = cnae_e_grau_de_risco.fk_grau_de_risco_id
+
+LEFT JOIN cnae_e_documentacao
+ON cnae_e_documentacao.fk_cnae_id = cnae.cnae_id
+
+LEFT JOIN documentacao
+ON documentacao.documentacao_id = cnae_e_documentacao.previa_fk_documentacao_id
+
+WHERE cnae_codigo LIKE '%$consultar%' LIMIT 20;
+
+SELECT
+	documentacao_descricao
+FROM cnae
+
+LEFT JOIN cnae_e_documentacao
+ON cnae_e_documentacao.fk_cnae_id = cnae.cnae_id
+
+LEFT JOIN documentacao
+ON documentacao.documentacao_id = cnae_e_documentacao.inicial_fk_documentacao_id
+
+WHERE cnae_codigo LIKE '%$consultar%' LIMIT 20;
