@@ -12,7 +12,7 @@
 	</br>
 	<form method="POST" id="formulario_consulta" action="">
 		<div class="well">
-            <label>CNAE: </label>
+            <label>Digite o CNAE (conforme cartão CNPJ): </label>
 			<input type="text" name="consultar" id="consultar" placeholder="Informe o CNAE aqui">
         </div>
             
