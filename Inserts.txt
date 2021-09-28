@@ -1,0 +1,60 @@
+-- Você deve colocar os valores dentro das aspas, cada parênteses representa um registro(linha) a ser inserido no banco.
+-- Você pode colocar quantos parênteses quiser, os parênteses devem ser separados por vírgula, o último parênteses deve ter ponto e vírgula. 
+-- Os campos que esperam receber um inteiro, como o campo que irá receber uma fk, não deve conter aspas.
+
+-- Inserts da tabela agrupamento:
+
+INSERT INTO agrupamento (agrupamento_codigo, agrupamento_descricao) VALUES
+('colocar o código aqui','colocar a descrição aqui'),
+('colocar o código aqui','colocar a descrição aqui'),
+('colocar o código aqui','colocar a descrição aqui'),
+('colocar o código aqui','colocar a descrição aqui'),
+('colocar o código aqui','colocar a descrição aqui');
+
+-- Inserts da tabela grau_de_risco:
+
+INSERT INTO grau_de_risco (grau_de_risco_codigo, grau_de_risco_descricao) VALUES
+('colocar o código aqui','colocar a descrição aqui'),
+('colocar o código aqui','colocar a descrição aqui'),
+('colocar o código aqui','colocar a descrição aqui'),
+('colocar o código aqui','colocar a descrição aqui'),
+('colocar o código aqui','colocar a descrição aqui');
+
+-- Inserts da documentacao:
+
+INSERT INTO documentacao (documentacao_codigo, documentacao_descricao) VALUES
+('colocar o código aqui','colocar a descrição aqui'),
+('colocar o código aqui','colocar a descrição aqui'),
+('colocar o código aqui','colocar a descrição aqui'),
+('colocar o código aqui','colocar a descrição aqui'),
+('colocar o código aqui','colocar a descrição aqui');
+
+-- Inserts da cnae:
+
+INSERT INTO cnae (cnae_codigo, cnae_descricao, fk_agrupamento_id) VALUES
+('colocar o código aqui','colocar a descrição aqui', colocar o id do agrupamento correspondente aqui),
+('colocar o código aqui','colocar a descrição aqui', colocar o id do agrupamento correspondente aqui),
+('colocar o código aqui','colocar a descrição aqui', colocar o id do agrupamento correspondente aqui),
+('colocar o código aqui','colocar a descrição aqui', colocar o id do agrupamento correspondente aqui),
+('colocar o código aqui','colocar a descrição aqui', colocar o id do agrupamento correspondente aqui);
+
+-- Para saber qual será o id que irá precisar você deve observar a posição que o registro foi enserido.
+-- A primeira linha a ser inserida na tabela receberá o id 1, a segunda linha a ser inserida na tabela receberá o id 2, e assim consecutivamente.
+
+-- Inserts da cnae_e_grau_de_risco:
+
+INSERT INTO cnae_e_grau_de_risco (fk_cnae_id, fk_grau_de_risco_id) VALUES
+(colocar o id do cnae correspondente aqui, colocar o id do grau_de_risco correspondente aqui),
+(colocar o id do cnae correspondente aqui, colocar o id do grau_de_risco correspondente aqui),
+(colocar o id do cnae correspondente aqui, colocar o id do grau_de_risco correspondente aqui),
+(colocar o id do cnae correspondente aqui, colocar o id do grau_de_risco correspondente aqui),
+(colocar o id do cnae correspondente aqui, colocar o id do grau_de_risco correspondente aqui);
+
+-- Inserts da cnae_e_documentacao:
+
+INSERT INTO cnae_e_documentacao (fk_cnae_id, previa_fk_documentacao_id, inicial_fk_documentacao_id) VALUES
+(colocar o id do cnae correspondente aqui, colocar o id da documentacao correspondente aqui, colocar o id da documentacao correspondente aqui),
+(colocar o id do cnae correspondente aqui, colocar o id da documentacao correspondente aqui, colocar o id da documentacao correspondente aqui),
+(colocar o id do cnae correspondente aqui, colocar o id da documentacao correspondente aqui, colocar o id da documentacao correspondente aqui),
+(colocar o id do cnae correspondente aqui, colocar o id da documentacao correspondente aqui, colocar o id da documentacao correspondente aqui),
+(colocar o id do cnae correspondente aqui, colocar o id da documentacao correspondente aqui, colocar o id da documentacao correspondente aqui);
