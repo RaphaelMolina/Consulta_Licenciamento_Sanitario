@@ -4,12 +4,14 @@
 	<meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <title>Resultado</title>
+	<link rel="stylesheet" href="css_externo.css">
 </head>
 <body>
-	</br><a class="btn btn-dark" href="index.html" role="button">Voltar</a></br>
+	<button type="button" class="btn btn-success"><a href="index.html" role="button">Voltar</a></button>
+	</br>
 	<div class="container">
 		<h2>Resultado:</h2>
-    </div></br></br>
+    </div>
 	
 <?php
 	
@@ -35,7 +37,7 @@ ON cnae_e_grau_de_risco.fk_cnae_id = cnae.cnae_id
 LEFT JOIN grau_de_risco
 ON grau_de_risco.grau_de_risco_id = cnae_e_grau_de_risco.fk_grau_de_risco_id
 
-WHERE cnae_codigo LIKE '$consultar%' LIMIT 20";
+WHERE cnae_codigo LIKE '$consultar%' LIMIT 03";
 
 $select_2 = "SELECT
 	documentacao_descricao
@@ -47,7 +49,7 @@ ON cnae_e_documentacao.fk_cnae_id = cnae.cnae_id
 LEFT JOIN documentacao
 ON documentacao.documentacao_id = cnae_e_documentacao.previa_fk_documentacao_id
 
-WHERE cnae_codigo LIKE '$consultar%' LIMIT 20";
+WHERE cnae_codigo LIKE '$consultar' LIMIT 20";
 
 $select_3 = "SELECT
 	documentacao_descricao
@@ -59,7 +61,7 @@ ON cnae_e_documentacao.fk_cnae_id = cnae.cnae_id
 LEFT JOIN documentacao
 ON documentacao.documentacao_id = cnae_e_documentacao.inicial_fk_documentacao_id
 
-WHERE cnae_codigo LIKE '$consultar%' LIMIT 20";
+WHERE cnae_codigo LIKE '$consultar' LIMIT 20";
 
 $resultado_1 = mysqli_query($conexao, $select_1);
 $resultado_2 = mysqli_query($conexao, $select_2);

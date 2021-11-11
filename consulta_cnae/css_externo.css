@@ -1,0 +1,33 @@
+label {
+	font-family: Arial black;
+	font-size: 15px;
+	padding: 10px;
+	}
+h1 {
+	font-family: Arial black;
+	text-align: center;
+	font-size: 20px; 
+	color: black;
+	}
+h3 {
+	font-family: Arial black;
+	text-align: center;
+	font-size: 15px; 
+	color: white;
+	}
+h5 {
+	font-family: Arial black;
+	text-align: center;
+	color: red;
+	}
+input {
+	border: 2px solid green;
+	border-radius: 4px;
+	margin: 50px 0;
+	width: 25%;
+	padding: 10px;
+	}
+a {
+	color: black;
+	font-family: Arial black;
+	}

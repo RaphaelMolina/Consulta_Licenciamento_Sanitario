@@ -3,26 +3,44 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <title>Consulta de CNAE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Consulta de Licenciamento Sanitário</title>
+	<link rel="stylesheet" href="css_externo.css">
 </head>
 <body>
+	</br>
 	<div class="container">
-		<h1>Consultar CNAE</h1>
+		<h1>SISTEMA DE BUSCA DE LICENCIAMENTO - CVS/SP
+			SEU GUIA INTELIGENTE PARA CONSULTAS SOBRE LICENCIAMENTOS SANITÁRIOS DO ESTADO DE SP.</h1>
+	</div>
+	</br>
+	<div class="text-white bg-dark">
+		<h3>CONSULTE <span style='font-size:50px;'>&#128071;</span>AQUI<span style='font-size:50px;'>&#128071;</span>SE SUA ATIVIDADE ECONÔMICA É PASSÍVEL DE LICENCIAMENTO SANITÁRIO.</h3>
+		</br>
 	</div>
 	</br>
 	<form method="POST" id="formulario_consulta" action="">
 		<div class="well">
-            <label>Digite o CNAE (conforme cartão CNPJ): </label>
-			<input type="text" name="consultar" id="consultar" placeholder="Informe o CNAE aqui">
+            <label class="text-white bg-dark"> Digite o código CNAE completo (conforme cartão CNPJ): </label>
+			<input type="text" name="consultar" id="consultar" placeholder="Informe o código CNAE completo aqui">
+			</br>
+			<h5>Informe o código CNAE completo para que seja listado os documentos prévios e iniciais.</h5>
         </div>
             
 	</form>
+	</br>
+	
 	<ul class="resultado">
 		
 	</ul>
 		
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src="consulta.js"></script>
+	</br>
+	</br>
+	<p>Não sabe onde encontrar seu código CNAE?</p>
+	<p>Basta acessar o site da receita federal: <a href="https://servicos.receita.fazenda.gov.br/servicos/cnpjreva/cnpjreva_solicitacao.asp">https://servicos.receita.fazenda.gov.br/servicos/cnpjreva/cnpjreva_solicitacao.asp</a></p>
+	<p>Importante! compareça com os documentos do anexo V da Portaria CVS 01 de 2020 na Prefeitura de sua cidade para regularização</p>
 	
 </body>
 </html>
