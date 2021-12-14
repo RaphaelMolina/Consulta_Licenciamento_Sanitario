@@ -1,4 +1,4 @@
-# P.I
+# Consulta Licenciamento Sanitário
 Projeto Integrador Univesp
 
 Sistema de busca para o licenciamento sanitário. 
