@@ -13,6 +13,7 @@ Modelagem conceitual:
 <br>
 
 Modelagem lógica:
+
 ![Modelagem_logica_01](https://github.com/RaphaelMolina/Consulta_Licenciamento_Sanitario/blob/main/Modelagem_l%C3%B3gica_banco.png)
 
 
