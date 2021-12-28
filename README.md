@@ -28,5 +28,5 @@ Select:
 
 Vídeo de apresentação:
 
-[![Vídeo de apresentação](http://img.youtube.com/vi/FF1f4bKYhoo/0.jpg)](https://youtu.be/3uFMb1Z4Mgo "Apresentação")
+[![Vídeo de apresentação](https://img.youtube.com/vi/3uFMb1Z4Mgo/maxresdefault.jpg)](https://youtu.be/3uFMb1Z4Mgo "Apresentação")
 
