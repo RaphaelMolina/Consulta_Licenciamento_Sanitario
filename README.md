@@ -1,9 +1,18 @@
-# Consulta Licenciamento Sanitário
-Projeto Integrador Univesp
+# Consulta Licenciamento Sanitário - Projeto Integrador Univesp
 
-Sistema de busca para o licenciamento sanitário. 
-Com base no código CNAE da empresa, ele irá apresentar o grau de risco e a documentação necessária para a empresa realizar o e licenciamento sanitário.
+### Sistema de busca para o Licenciamento Sanitário. 
+### Com base no código CNAE da empresa, ele irá apresentar o grau de risco e a documentação necessária para a empresa realizar o e licenciamento sanitário.
+### Projeto Integrador Univesp, realizado no segundo semestre de 2021.
+### Cursos Engenharia de Computação, Tecnologia da Informação e Ciência de dados.
 
-Projeto Integrador Univesp, realizado no segundo semestre de 2021.
+<br>
 
-Cursos Engenharia de Computação, Tecnologia da Informação e Ciência de dados.
+Modelagem conceitual:
+![Modelagem_conceitual_01](https://github.com/RaphaelMolina/Consulta_Licenciamento_Sanitario/blob/main/Modelagem_conceitual_banco.jpg)
+
+<br>
+
+Modelagem lógica:
+![Modelagem_logica_01](https://github.com/RaphaelMolina/Consulta_Licenciamento_Sanitario/blob/main/Modelagem_l%C3%B3gica_banco.png)
+
+
