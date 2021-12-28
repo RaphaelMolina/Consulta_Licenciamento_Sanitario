@@ -15,4 +15,10 @@ Modelagem conceitual:
 Modelagem lógica:
 ![Modelagem_logica_01](https://github.com/RaphaelMolina/Consulta_Licenciamento_Sanitario/blob/main/Modelagem_l%C3%B3gica_banco.png)
 
+<br>
+
+Select:
+![Select_01](https://github.com/RaphaelMolina/Consulta_Licenciamento_Sanitario/blob/main/Select_01.JPG)
+![Select_02](https://github.com/RaphaelMolina/Consulta_Licenciamento_Sanitario/blob/main/Select_02.JPG)
+
 
